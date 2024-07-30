@@ -45,4 +45,6 @@ response = requests.post(
         "file": ("example.jpg", open("example.jpg", "rb"), "image/jpeg")
     }
 )
+
+print(response.status_code)
 print(response.json())
